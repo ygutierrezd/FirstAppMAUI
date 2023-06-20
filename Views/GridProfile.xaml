@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstSampleApp.Views.GridProfile"
+             Title="GridProfile">
+    <VerticalStackLayout BackgroundColor="LightGrey">
+        <Frame Margin="20,30" CornerRadius="20" BackgroundColor="White">
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+                <Frame Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" BorderColor="Transparent" IsClippedToBounds="True" Padding="0" Margin="0,0,20,0">
+                    <Image Source="rick_100" Aspect="AspectFit"  />
+                </Frame>
+                <Label Grid.Column="1" Grid.Row="0" Text="Rick Thomson" FontSize="14" />
+                <Label Grid.Column="1" Grid.Row="1" Text="Full stack dev" FontSize="14" TextColor="Silver" />
+                <Frame Grid.Row="2" Grid.Column="1" BackgroundColor="#f2f6fc" BorderColor="Transparent" HeightRequest="70" Margin="0,10">
+                    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
+                        <Label Grid.Row="0" Grid.Column="0" Text="Articules" FontSize="9" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="4" FontSize="13" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="0" Grid.Column="1" Text="Friends" FontSize="9" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="1" Grid.Column="1" Text="4" FontSize="13" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="0" Grid.Column="2" Text="Reads" FontSize="9" TextColor="Black" HorizontalTextAlignment="Center" />
+                        <Label Grid.Row="1" Grid.Column="2" Text="14" FontSize="13" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                    </Grid>
+                    
+                </Frame>
+            </Grid>
+        </Frame>
+    </VerticalStackLayout>
+    <!--<Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+        <Button Grid.Row="0" Grid.Column="0" BackgroundColor="Aqua"></Button>
+        <Button Grid.Row="0" Grid.Column="1" BackgroundColor="Beige"></Button>
+        <Button Grid.Row="1" Grid.Column="0" BackgroundColor="OrangeRed"></Button>
+    </Grid>-->
+</ContentPage>

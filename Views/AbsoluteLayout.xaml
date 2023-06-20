@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstSampleApp.Views.AbsoluteLayout"
+             Title="AbsoluteLayoutSample">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" >
+        <!--<Label AbsoluteLayout.LayoutBounds=".10,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="#c3e9fb" HorizontalTextAlignment="Center" TextColor="#F00DCB" Text="1111" FontAttributes="Bold"/>
+        <Label AbsoluteLayout.LayoutBounds=".35,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="#c3e9fb" HorizontalTextAlignment="Center" TextColor="#F00DCB" Text="2222" FontAttributes="Bold"/>
+        <Label AbsoluteLayout.LayoutBounds=".60,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="#c3e9fb" HorizontalTextAlignment="Center" TextColor="#F00DCB" Text="3333" FontAttributes="Bold"/>
+        <Label AbsoluteLayout.LayoutBounds=".85,.18,60,30" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BackgroundColor="#c3e9fb" HorizontalTextAlignment="Center" TextColor="#F00DCB" Text="5555" FontAttributes="Bold"/>-->
+        <Frame AbsoluteLayout.LayoutBounds=".50,.45,200,40" Padding="5,0,0,0" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BorderColor="Black" CornerRadius="5">
+            <Entry Placeholder="Ingrese su usuario" />
+        </Frame>
+        <Frame AbsoluteLayout.LayoutBounds=".50,.55,200,40" Padding="5,0,0,0" AbsoluteLayout.LayoutFlags="XProportional,YProportional" BorderColor="Black" CornerRadius="5">
+            <Entry Placeholder="Ingrese su contraseña" />
+        </Frame>
+        <Button AbsoluteLayout.LayoutBounds=".50,.65,200,40" AbsoluteLayout.LayoutFlags="XProportional,YProportional" Text="Iniciar" BackgroundColor="{StaticResource Secondary}"/>
+        <!--<BoxView BackgroundColor="Silver" AbsoluteLayout.LayoutBounds=".60,.18,60,30"></BoxView>-->
+        <!--<BoxView BackgroundColor="Silver" AbsoluteLayout.LayoutBounds=".95,.58,60,30"></BoxView>-->
+    </AbsoluteLayout>
+</ContentPage>
